@@ -5,15 +5,11 @@
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
   background-color: #333;
   color: #ecf0f1;
-  padding: 0;
-  margin: 0;
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  text-align: center;
 }
 
 header {
@@ -33,7 +29,6 @@ nav a {
   text-decoration: none;
   margin: 0 15px;
   font-weight: bold;
-  transition: color 0.3s ease;
 }
 
 nav a:hover {
@@ -51,12 +46,11 @@ section {
   margin-bottom: 60px;
 }
 
-/* Flex layout for Home and About sections */
 #home,
 #about {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  font-weight: 300;
   text-align: left;
 }
 
@@ -68,14 +62,16 @@ section {
   height: auto;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  align-items: right;
 }
 
 #home h2,
 #about h2,
 #home p,
 #about p {
-  order: 1;
-  flex: 1;
+  font-size: larger;
+  font-weight: 500;
+  margin: 0 20px;
 }
 
 section h2 {
