@@ -12,7 +12,7 @@ document.querySelectorAll("nav a").forEach((link) => {
 });
 
 const form = document.querySelector("form");
-if (form) {
+if (form && form.elements) {
   form.addEventListener("submit", function (e) {
     const nameInput = form.elements["name"];
     const emailInput = form.elements["email"];
