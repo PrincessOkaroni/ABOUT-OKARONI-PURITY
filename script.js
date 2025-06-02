@@ -14,9 +14,9 @@ document.querySelectorAll("nav a").forEach((link) => {
 const form = document.querySelector("form");
 if (form) {
   form.addEventListener("submit", function (e) {
-    const name = form.name.value.trim();
-    const email = form.email.value.trim();
-    const message = form.message.value.trim();
+    const name = form.elements["name"].value.trim();
+    const email = form.elements["email"].value.trim();
+    const message = form.elements["message"].value.trim();
     if (!name || !email || !message) {
       e.preventDefault();
       alert("Please fill in all fields before submitting.");
