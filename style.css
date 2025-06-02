@@ -2,19 +2,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #333
+  color: #ecf0f1;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
 }
 
 header {
   background-color: #2c3e50;
-  color: #fff;
+  color: #c2bebe;
   padding: 20px 0;
   text-align: center;
 }
@@ -33,7 +37,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #1abc9c;
+  color: orange;
 }
 
 main {
@@ -49,9 +53,24 @@ section {
 section h2 {
   margin-bottom: 15px;
   color: #2c3e50;
-  border-bottom: 2px solid #1abc9c;
+  border-bottom: 2px solid black;
   display: inline-block;
   padding-bottom: 5px;
+}
+
+section p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+  text-align: left;
+  font-size: larger;
+  font-weight: 500;
+}
+
+section img {
+  max-width: 100%;
+  height: auto;
+  align-items: right;
+    display: block;
 }
 
 section p,
@@ -60,10 +79,9 @@ li {
 }
 
 img {
-  max-width: 100%;
-  height: auto;
   border-radius: 10px;
-  margin: 10px 0;
+  margin: 20px 0;
+  padding: 20px;
 }
 
 ul {
@@ -73,7 +91,7 @@ ul {
 
 #projects a {
   display: block;
-  color: #3498db;
+  color: lab(57.47% 41.29 49.26);
   text-decoration: none;
   margin: 5px 0;
 }
