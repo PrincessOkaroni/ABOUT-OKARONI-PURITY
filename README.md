@@ -1,6 +1,6 @@
 # Purity's Portfolio
 
-Welcome to Purity Nekesa's personal portfolio website! This project showcases my journey as a Software Engineering student, highlighting my skills, projects, and passion for web development.
+Welcome to Purity Nekesa's personal portfolio website. This project showcases my journey as a Software Engineering student, highlighting my skills, projects, and passion for web development.
 
 ## Author
 
@@ -29,7 +29,5 @@ Created by **Purity Okaroni**.
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
----
 
 Created with ❤️ by Purity Nekesa.
