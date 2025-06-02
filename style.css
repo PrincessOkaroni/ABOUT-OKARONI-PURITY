@@ -7,13 +7,13 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  background-color: #333
+  background-color: #333;
   color: #ecf0f1;
-    padding: 0;
-    margin: 0;
-    font-size: 16px;
-    font-weight: 400;
-    text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
 }
 
 header {
@@ -38,6 +38,7 @@ nav a {
 
 nav a:hover {
   color: orange;
+  cursor: pointer;
 }
 
 main {
@@ -70,7 +71,7 @@ section img {
   max-width: 100%;
   height: auto;
   align-items: right;
-    display: block;
+  display: block;
 }
 
 section p,
@@ -123,7 +124,7 @@ form textarea {
 form button {
   margin-top: 10px;
   padding: 10px 20px;
-  background-color: #1abc9c;
+  background-color: #black;
   color: white;
   border: none;
   border-radius: 5px;
