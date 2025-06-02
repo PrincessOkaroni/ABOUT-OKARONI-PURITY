@@ -51,6 +51,33 @@ section {
   margin-bottom: 60px;
 }
 
+/* Flex layout for Home and About sections */
+#home,
+#about {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  text-align: left;
+}
+
+#home img,
+#about img {
+  order: 2;
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#home h2,
+#about h2,
+#home p,
+#about p {
+  order: 1;
+  flex: 1;
+}
+
 section h2 {
   margin-bottom: 15px;
   color: #2c3e50;
@@ -70,7 +97,6 @@ section p {
 section img {
   max-width: 100%;
   height: auto;
-  align-items: right;
   display: block;
 }
 
@@ -92,7 +118,7 @@ ul {
 
 #projects a {
   display: block;
-  color: lab(57.47% 41.29 49.26);
+  color: #3498db;
   text-decoration: none;
   margin: 5px 0;
 }
@@ -124,7 +150,7 @@ form textarea {
 form button {
   margin-top: 10px;
   padding: 10px 20px;
-  background-color: #black;
+  background-color: #000;
   color: white;
   border: none;
   border-radius: 5px;
@@ -146,5 +172,17 @@ footer {
   nav a {
     display: block;
     margin: 10px 0;
+  }
+  #home,
+  #about {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+  #home img,
+  #about img {
+    order: 1;
+    margin-bottom: 1rem;
+    max-width: 100%;
   }
 }
