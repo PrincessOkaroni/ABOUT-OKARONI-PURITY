@@ -5,173 +5,152 @@
 }
 
 body {
-  background-color: #333;
-  color: #ecf0f1;
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  scroll-behavior: smooth;
 }
 
 header {
-  background-color: #2c3e50;
-  color: #c2bebe;
+  background-color: #1e272e;
+  color: #fff;
   padding: 20px 0;
   text-align: center;
 }
 
 header h1 {
   margin-bottom: 10px;
-  font-size: 2em;
+  font-size: 2.5rem;
+}
+
+nav {
+  margin-top: 10px;
 }
 
 nav a {
-  color: #ecf0f1;
+  color: #fff;
   text-decoration: none;
   margin: 0 15px;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: orange;
-  cursor: pointer;
+  color: #00cec9;
 }
 
 main {
-  padding: 40px 20px;
   max-width: 1000px;
-  margin: auto;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
 section {
   margin-bottom: 60px;
 }
 
-#home,
-#about {
-  display: flex;
-  align-items: center;
-  font-weight: 300;
-  text-align: left;
-}
-
-#home img,
-#about img {
-  order: 2;
-  max-width: 250px;
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  align-self: flex-end;
-}
-
-#home h2,
-#about h2,
-#home p,
-#about p {
-  font-size: larger;
-  font-weight: 500;
-  margin: 0 20px;
-}
-
 section h2 {
-  margin-bottom: 15px;
-  color: #2c3e50;
-  border-bottom: 2px solid black;
+  color: #2d3436;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #00cec9;
   display: inline-block;
   padding-bottom: 5px;
 }
 
-section p {
-  margin-bottom: 20px;
-  line-height: 1.5;
-  text-align: left;
-  font-size: larger;
-  font-weight: 500;
-}
-
-section img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
 section p,
-li {
-  font-size: larger;
-  font-weight: 500;
-  line-height: 1.6;
+section ul {
+  margin-bottom: 15px;
 }
 
 img {
+  max-width: 100%;
+  height: auto;
   border-radius: 10px;
-  margin: 20px 0;
-  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 ul {
-  list-style-type: none;
-  padding: 0;
+  list-style-type: square;
+  padding-left: 20px;
 }
-
+ul li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
 #projects a {
   display: block;
-  color: #3498db;
+  margin: 8px 0;
+  color: #0984e3;
   text-decoration: none;
-  margin: 5px 0;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
 #projects a:hover {
   text-decoration: underline;
-  color: #2980b9;
-  cursor: pointer;
+  color: #00b894;
 }
 
 form {
-  background: #333;
+  background-color: #fff;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 form label {
   display: block;
-  margin: 10px 0 5px;
+  margin-top: 10px;
+  font-weight: 500;
 }
 
 form input,
 form textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  margin-top: 5px;
   border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: vertical;
 }
 
 form button {
-  margin-top: 10px;
-  padding: 10px 20px;
-  background-color: #000;
+  margin-top: 15px;
+  background-color: #00b894;
   color: white;
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 form button:hover {
-  color: #16a085;
-  cursor: pointer;
+  background-color: #019875;
 }
 
 footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #2c3e50;
+  background-color: #1e272e;
   color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 768px) {
   nav a {
     display: block;
     margin: 10px 0;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
   }
 }
